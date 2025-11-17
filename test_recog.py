@@ -11,7 +11,7 @@ from sklearn.preprocessing import LabelEncoder
 
 # --- KONFIGURASI ---
 KNN_MODEL_FILE = "face_knn_optimized_model.pkl"
-SVM_MODEL_FILE = "face_svm_model.pkl"
+SVM_MODEL_FILE = "face_svm_optimized_model.pkl"
 ONECLASS_MODEL_FILE = "oneclass_svm_model.pkl"
 CONFIDENCE_THRESHOLD = 0.7
 DISTANCE_THRESHOLD = 0.5
