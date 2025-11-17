@@ -1,67 +1,93 @@
 # ===============================================
-# MEDIAPIPE FRAMEWORK (WAJIB)
-# ===============================================
-# Pustaka Utama MediaPipe
-mediapipe
-
-# ===============================================
-# PUSTAKA PENDUKUNG PEMROSESAN CITRA & MATRIKS
-# ===============================================
-# Computer Vision (Wajib untuk pembacaan/menampilkan hasil frame)
-opencv-python
-
-# Operasi Matriks dan Data (Digunakan untuk memproses output landmark/koordinat)
-numpy
-pandas
-
-# Visualisasi dan Output
-matplotlib
-Pillow
-scikit-learn
-seaborn
-# ===============================================
-# CATATAN:
-# MediaPipe dirancang untuk efisiensi CPU dan perangkat edge.
-# Jika Anda berencana menggunakan akselerasi GPU, pastikan Anda 
-# memiliki versi TensorFlow yang kompatibel yang terinstal, 
-# karena MediaPipe sering menggunakan TensorFlow di bawahnya.
+# MEDIAPIPE FACE RECOGNITION PROJECT REQUIREMENTS
 # ===============================================
 
 # ===============================================
-# MEDIAPIPE FRAMEWORK (WAJIB)
+# CORE MEDIAPIPE FRAMEWORK
 # ===============================================
-# Pustaka Utama MediaPipe
-mediapipe
+mediapipe>=0.10.0
 
 # ===============================================
-# PUSTAKA PENDUKUNG PEMROSESAN CITRA & MATRIKS
+# COMPUTER VISION & IMAGE PROCESSING
 # ===============================================
-# Computer Vision (Wajib untuk pembacaan/menampilkan hasil frame)
-opencv-python
+opencv-python>=4.8.0
+opencv-contrib-python>=4.8.0
+Pillow>=9.5.0
 
-# Operasi Matriks dan Data (Digunakan untuk memproses output landmark/koordinat)
-numpy
-pandas
+# ===============================================
+# SCIENTIFIC COMPUTING & DATA PROCESSING
+# ===============================================
+numpy>=1.24.0
+pandas>=2.0.0
+scipy>=1.10.0
 
 # ===============================================
 # MACHINE LEARNING FRAMEWORKS
 # ===============================================
-# Scikit-learn untuk algoritma tradisional (KNN, SVM)
-scikit-learn
+# Scikit-learn untuk KNN, SVM, preprocessing
+scikit-learn>=1.3.0
 
-# TensorFlow untuk deep learning (CNN)
-tensorflow>=2.8.0
-keras
-
-# ===============================================
-# VISUALISASI DAN PLOTTING
-# ===============================================
-# Untuk plotting training curves dan visualisasi
-matplotlib
-seaborn
+# TensorFlow untuk CNN (deep learning)
+tensorflow>=2.13.0
+keras>=2.13.0
 
 # ===============================================
-# UTILITAS
+# DATA VISUALIZATION & PLOTTING
 # ===============================================
-# Untuk menyimpan model dan data
-pickle-mixin
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# ===============================================
+# MODEL PERSISTENCE & UTILITIES
+# ===============================================
+# Pickle sudah built-in di Python, tapi untuk kompatibilitas
+pickle5>=0.0.12
+
+# Time dan OS sudah built-in di Python
+# Warnings sudah built-in di Python
+
+# ===============================================
+# OPTIONAL: PERFORMANCE & OPTIMIZATION
+# ===============================================
+# Joblib untuk parallel processing (digunakan oleh scikit-learn)
+joblib>=1.3.0
+
+# NumPy math kernel library untuk performa lebih baik
+# mkl>=2023.0.0  # Uncomment jika perlu optimasi Intel
+
+# ===============================================
+# DEVELOPMENT & TESTING (OPTIONAL)
+# ===============================================
+# pytest>=7.4.0
+# jupyter>=1.0.0
+# ipython>=8.14.0
+
+# ===============================================
+# PLATFORM SPECIFIC (OPTIONAL)
+# ===============================================
+# Untuk Windows users yang memerlukan Visual C++
+# pywin32>=306  # Uncomment untuk Windows
+
+# ===============================================
+# CATATAN INSTALASI:
+# ===============================================
+# 1. Buat virtual environment terlebih dahulu:
+#    python -m venv .venv
+#    
+# 2. Aktifkan virtual environment:
+#    Windows: .venv\Scripts\activate
+#    Linux/Mac: source .venv/bin/activate
+#    
+# 3. Install requirements:
+#    pip install -r requirements.txt
+#    
+# 4. Untuk GPU support (TensorFlow):
+#    pip install tensorflow-gpu>=2.13.0
+#    
+# 5. Jika ada masalah dengan MediaPipe di Windows:
+#    pip install mediapipe-silicon  # Untuk Mac M1/M2
+#    
+# ===============================================
+# VERSI MINIMUM PYTHON: 3.8+
+# VERSI RECOMMENDED: Python 3.9 atau 3.10
+# ===============================================
