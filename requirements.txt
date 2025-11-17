@@ -1,0 +1,67 @@
+# ===============================================
+# MEDIAPIPE FRAMEWORK (WAJIB)
+# ===============================================
+# Pustaka Utama MediaPipe
+mediapipe
+
+# ===============================================
+# PUSTAKA PENDUKUNG PEMROSESAN CITRA & MATRIKS
+# ===============================================
+# Computer Vision (Wajib untuk pembacaan/menampilkan hasil frame)
+opencv-python
+
+# Operasi Matriks dan Data (Digunakan untuk memproses output landmark/koordinat)
+numpy
+pandas
+
+# Visualisasi dan Output
+matplotlib
+Pillow
+scikit-learn
+seaborn
+# ===============================================
+# CATATAN:
+# MediaPipe dirancang untuk efisiensi CPU dan perangkat edge.
+# Jika Anda berencana menggunakan akselerasi GPU, pastikan Anda 
+# memiliki versi TensorFlow yang kompatibel yang terinstal, 
+# karena MediaPipe sering menggunakan TensorFlow di bawahnya.
+# ===============================================
+
+# ===============================================
+# MEDIAPIPE FRAMEWORK (WAJIB)
+# ===============================================
+# Pustaka Utama MediaPipe
+mediapipe
+
+# ===============================================
+# PUSTAKA PENDUKUNG PEMROSESAN CITRA & MATRIKS
+# ===============================================
+# Computer Vision (Wajib untuk pembacaan/menampilkan hasil frame)
+opencv-python
+
+# Operasi Matriks dan Data (Digunakan untuk memproses output landmark/koordinat)
+numpy
+pandas
+
+# ===============================================
+# MACHINE LEARNING FRAMEWORKS
+# ===============================================
+# Scikit-learn untuk algoritma tradisional (KNN, SVM)
+scikit-learn
+
+# TensorFlow untuk deep learning (CNN)
+tensorflow>=2.8.0
+keras
+
+# ===============================================
+# VISUALISASI DAN PLOTTING
+# ===============================================
+# Untuk plotting training curves dan visualisasi
+matplotlib
+seaborn
+
+# ===============================================
+# UTILITAS
+# ===============================================
+# Untuk menyimpan model dan data
+pickle-mixin
