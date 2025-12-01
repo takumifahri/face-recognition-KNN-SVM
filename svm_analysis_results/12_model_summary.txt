@@ -1,0 +1,94 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║           ENHANCED SVM MODEL SUMMARY - DUAL SOURCE v3.0             ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📊 DATA SOURCES:
+═══════════════════════════════════════════════════════════════════════
+  • Local format: data_mp_wajah/<person_name>/*.npy
+  • Kaggle format: data_mp_wajah/kaggle/Faces/Faces/<Name_Number>.jpg
+  • Auto-detection: ✅ ENABLED
+  • Auto-merge: ✅ ENABLED
+
+📈 DATASET INFORMATION:
+═══════════════════════════════════════════════════════════════════════
+  • Training Samples: 1926 (70%)
+  • Test Samples: 826 (30%)
+  • Feature Dimensions: 1442
+  • Number of Classes: 32
+  • Classes: Akshay Kumar, Alexandra Daddario, Alia Bhatt, Amitabh Bachchan, Andy Samberg, Anushka Sharma, Billie Eilish, Brad Pitt, Camila Cabello, Charlize Theron...
+  • Class Balance Ratio: 6.67x
+
+🎯 PERFORMANCE METRICS:
+═══════════════════════════════════════════════════════════════════════
+  • Test Accuracy: 0.6465 (64.65%)
+  • Cross-Validation (5-fold): 0.6111 ± 0.0135
+  • Macro Precision: 0.6508
+  • Macro Recall: 0.6131
+  • Macro F1-Score: 0.6219
+
+🔧 MODEL CONFIGURATION:
+═══════════════════════════════════════════════════════════════════════
+  • Algorithm: Support Vector Machine (SVM)
+  • Kernel: rbf
+  • C (Regularization): 100
+  • Gamma: auto
+  • Support Vectors: 1716/1926 (89.1%)
+
+📏 DECISION STATISTICS:
+═══════════════════════════════════════════════════════════════════════
+  • Train Mean Score: 31.2964
+  • Test Mean Score: 31.1474
+  • Train Std Dev: 0.1774
+  • Test Std Dev: 0.4860
+  • Score Ratio (Test/Train): 1.00x
+
+🎓 SUPPORT VECTORS:
+═══════════════════════════════════════════════════════════════════════
+  • Total Support Vectors: 1716/1926 (89.1%)
+  • Per-Class Distribution:
+    • Akshay Kumar: 35
+    • Alexandra Daddario: 63
+    • Alia Bhatt: 50
+    • Amitabh Bachchan: 46
+    • Andy Samberg: 60
+    • Anushka Sharma: 48
+    • Billie Eilish: 65
+    • Brad Pitt: 76
+    • Camila Cabello: 55
+    • Charlize Theron: 54
+    ...
+
+🔧 PREPROCESSING PIPELINE:
+═══════════════════════════════════════════════════════════════════════
+  • Original Features: 1442 (face landmarks + geometric features)
+  • Final Features: 1442
+  • Scaler: RobustScaler (10-90 percentile)
+  • Feature Selection: Auto (via SVM kernel)
+
+🔒 UNKNOWN DETECTION:
+═══════════════════════════════════════════════════════════════════════
+  • Status: ENABLED ✅
+  • Decision Threshold: 31.3234
+  • Percentile: 15th
+  • Method: Decision function-based threshold
+
+📂 OUTPUT FILES:
+═══════════════════════════════════════════════════════════════════════
+  01. Confusion Matrix
+  02. C Parameter Optimization
+  03. Decision Function Distribution
+  04. Support Vectors Analysis
+  05. Per-Class Performance
+  06. Prediction Confidence
+  07. Class Balance Analysis
+  08. Learning Curve
+  09. Probability Distribution
+  10. Misclassification Matrix
+  11. Normalized Confusion Matrix
+  12. Model Summary (This File)
+
+✅ MODEL READY FOR DEPLOYMENT!
+═══════════════════════════════════════════════════════════════════════
+Generated: 2025-12-01 20:42:37
+    

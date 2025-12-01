@@ -1,0 +1,79 @@
+
+╔══════════════════════════════════════════════════════════════════════╗
+║           ENHANCED KNN MODEL SUMMARY - DUAL SOURCE v3.0             ║
+╚══════════════════════════════════════════════════════════════════════╝
+
+📊 DATA SOURCES:
+═══════════════════════════════════════════════════════════════════════
+  • Local format: data_mp_wajah/<person_name>/*.npy
+  • Kaggle format: data_mp_wajah/kaggle/Faces/Faces/<Name_Number>.jpg
+  • Auto-detection: ✅ ENABLED
+  • Auto-merge: ✅ ENABLED
+
+📈 DATASET INFORMATION:
+═══════════════════════════════════════════════════════════════════════
+  • Training Samples: 7705 (70%)
+  • Test Samples: 3303 (30%)
+  • Feature Dimensions: 423
+  • Number of Classes: 32
+  • Classes: Akshay Kumar, Alexandra Daddario, Alia Bhatt, Amitabh Bachchan, Andy Samberg, Anushka Sharma, Billie Eilish, Brad Pitt, Camila Cabello, Charlize Theron...
+  • Class Balance Ratio: 6.67x
+
+🎯 PERFORMANCE METRICS:
+═══════════════════════════════════════════════════════════════════════
+  • Test Accuracy: 0.8420 (84.20%)
+  • Cross-Validation (5-fold): 0.7537 ± 0.0037
+  • Macro Precision: 0.8454
+  • Macro Recall: 0.8264
+  • Macro F1-Score: 0.8326
+
+🔧 MODEL CONFIGURATION:
+═══════════════════════════════════════════════════════════════════════
+  • Algorithm: K-Nearest Neighbors (KNN)
+  • K (Neighbors): 5
+  • Weight Function: distance
+  • Distance Metric: manhattan
+
+📏 DISTANCE STATISTICS:
+═══════════════════════════════════════════════════════════════════════
+  • Train Mean Distance: 32.5024
+  • Test Mean Distance: 42.5959
+  • Train Std Dev: 19.9284
+  • Test Std Dev: 26.1676
+  • Distance Ratio (Test/Train): 1.31x
+
+🔧 PREPROCESSING PIPELINE:
+═══════════════════════════════════════════════════════════════════════
+  • Original Features: 1442 (face landmarks + geometry)
+  • PCA Components: 423
+  • Variance Explained: 0.9900 (99.00%)
+  • Dimensionality Reduction: 3.4x
+  • Scaler: RobustScaler (10-90 percentile)
+  • Data Augmentation: YES (4x)
+
+🔒 UNKNOWN DETECTION:
+═══════════════════════════════════════════════════════════════════════
+  • Status: ENABLED ✅
+  • Threshold: 62.4501
+  • Percentile: 85th
+  • Method: Distance-based threshold
+
+📂 OUTPUT FILES:
+═══════════════════════════════════════════════════════════════════════
+  01. Confusion Matrix
+  02. K-Value Optimization
+  03. Distance Distribution
+  04. PCA Variance Analysis
+  05. Per-Class Performance
+  06. Prediction Confidence
+  07. Class Balance Analysis
+  08. Learning Curve
+  09. Feature Importance (PCA)
+  10. Misclassification Matrix
+  11. Normalized Confusion Matrix
+  12. Model Summary (This File)
+
+✅ MODEL READY FOR DEPLOYMENT!
+═══════════════════════════════════════════════════════════════════════
+Generated: 2025-12-01 21:08:13
+    
